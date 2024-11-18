@@ -40,7 +40,7 @@ Este proyecto es un sistema automatizado diseñado para gestionar el riego de pl
 ---
 
 ## Código fuente  
-```arduino
+```cpp
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -68,7 +68,7 @@ int estadoMotor2 = 0;
 int estadoMotor3 = 0;
 int estadoMotor4 = 0;
 
-int umbralHumedad = 1000;  // umbral de humedad para activar las bombas
+int umbralHumedad = 300;  // umbral de humedad para activar las bombas
 
 // crea el objeto para la pantalla LCD
 LiquidCrystal_I2C lcd(0x27, 16, 2);
